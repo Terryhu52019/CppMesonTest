@@ -7,9 +7,11 @@ project(
 )
 
 boost_dep = dependency('boost')
+incdir = include_directories('include')
 
 executable(
 	'main',
 	'src/main.cpp',
 	dependencies : boost_dep,
+	include_directories : incdir
 )
